@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+
+header 
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1px 70px;
+    margin-bottom:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a69a0;
+    background-image: linear-gradient(90deg, #0a69a0 20%, #071120 80%);
+}
+
+header .Logo
+{
+    position: relative;
+    max-width: 180px;
+}
+
+header ul 
+{
+    position: relative;
+    display: flex;
+}
+
+ul li 
+{
+    list-style: none;
+}
+
+header ul li a
+{
+    font-size: 1.4em;
+    display: inline-block;
+    font-weight: 700;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+
+
+
+body
+{
+    background-color: black;
+}
+
+.BenjaminButton
+{
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+}
+.BenjaminButton:hover
+{
+    background-color: rgba(0,0,0,0.2);
+}
+#LoginID { background-color: #0a69a0;}
+#LoginID:hover { background-color: #074569;}
+
+.MainText
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.ScreenCenterText
+{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    font-weight: 900;
+    font-size: 40px;
+    z-index: 1;
+    background-color: #74aecf;
+
+    user-select: none;
+
+    padding-left: 10vh;
+    padding-right: 10vh;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+}
+
+.LoginButton
+{
+    position: fixed;
+    color: white;
+    font-size: 30px;
+    background-color: #0a69a0;
+    text-decoration: none;
+
+    top: 220%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    /* margin-top: 20%; */
+}
+.LoginButton:hover
+{
+    background-color: #074569;
+}
+
+.MainGif
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
