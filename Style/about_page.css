@@ -1,62 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
-
-body
+.AboutLandingContent
 {
-    overflow: hidden;
-}
-
-header 
-{
+    width: calc(1.5 * 60vh);
+    height: calc(1.5 * 34vh);
     position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1px 70px;
-    margin-bottom:20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(224, 224, 224);
-}
-
-header .Logo
-{
-    height: calc(1.98 * 5.5vh);
-    width: calc(1.98 * 10vh);
-    /* position: fixed;
+    top: 4vh;
     left: 50%;
-    transform: translateX(-50%); */
+    transform: translateX(-50%);
+    z-index: 1;
 }
-
-header ul 
+.AboutLandingContent:hover
 {
-    position: relative;
-    display: flex;
+    filter: blur(2px);
 }
-
-ul li 
+#AboutGif
 {
-    list-style: none;
+    width: calc(1.5 * 60vh);
+    height: calc(1.5 * 34vh);
+    z-index: -1;
 }
-
-header ul li a
+#ScreenCenterText
 {
-    font-size: 1.4em;
-    display: inline-block;
-    font-weight: 700;
-    margin-left: 50px;
-    text-decoration: none;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    z-index: 1;
+
+    position: fixed;
+    top: 27vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    user-select: none;
 }
-
-
 
 
 .TextBorderDivs
@@ -65,21 +42,12 @@ header ul li a
     font-size: 0.8em;
     color: rgb(51, 51, 51);
 
-    width: calc(1.77 * 57vh);;
+    width: calc(1.77 * 50vh);;
     position: relative;
-    top: 4vh;
+    top: 7vh;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     padding-bottom: 3vh;
     border-bottom: 2px solid rgb(216, 216, 216);
-}
-.AboutGif
-{
-    width: calc(1.77 * 60vh);
-    height: calc(1.77 * 34vh);
-    position: relative;
-    top: 4vh;
-    left: 50%;
-    transform: translateX(-50%);
 }
