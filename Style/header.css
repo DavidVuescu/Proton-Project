@@ -21,7 +21,7 @@ header
     justify-content: space-between;
     align-items: center;
     background-color: #0a69a0;
-    background-image: linear-gradient(90deg, #0a69a0 20%, #071120 80%);
+    background-image: linear-gradient(90deg, #0a69a0 20%, #091120 50%);
 }
 
 header .Logo

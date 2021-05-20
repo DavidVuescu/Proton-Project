@@ -3,7 +3,7 @@
     width: calc(1.5 * 60vh);
     height: calc(1.5 * 34vh);
     position: relative;
-    top: 4vh;
+    top: 16vh;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -44,7 +44,7 @@
 
     width: calc(1.77 * 50vh);;
     position: relative;
-    top: 7vh;
+    top: 23vh;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
