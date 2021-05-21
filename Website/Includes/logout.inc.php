@@ -6,3 +6,4 @@ session_destroy();
 
 header("location: ../landing.php");
     exit();
+    
