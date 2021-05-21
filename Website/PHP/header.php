@@ -25,4 +25,3 @@
         </header>
 
         <div class="wrapper">
-            
