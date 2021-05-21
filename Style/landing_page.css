@@ -3,19 +3,6 @@ body
     background-color: black;
 }
 
-.BenjaminButton
-{
-    padding: 10px 20px;
-    border-radius: 10px;
-    color: white;
-}
-.BenjaminButton:hover
-{
-    background-color: rgba(0,0,0,0.2);
-}
-#LoginID { background-color: #0a69a0;}
-#LoginID:hover { background-color: #074569;}
-
 .MainText
 {
     position: fixed;
@@ -32,7 +19,8 @@ body
     font-weight: 900;
     font-size: 40px;
     z-index: 1;
-    background-color: #74aecf;
+    /* background-color: #74aecf; */
+    text-shadow: 3px 4px 3px rgb(0, 0, 0);
 
     user-select: none;
 
