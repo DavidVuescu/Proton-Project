@@ -35,7 +35,7 @@ body
     .LoginOptions
     {
         position: fixed;
-        top: 30%;
+        top: 32%;
         left: 50%;
         transform: translate(-50%, -50%);
         margin-top: 25px;
@@ -57,51 +57,48 @@ body
             {
                 border: 1px solid #0a69a077;
             }
-        .Remember
+        h4
         {
-            user-select: none;
+            position: fixed;
             font-size: 0.8em;
+            color: red;
+            top: 10px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
         }
-        .Forget
+        h2
         {
-            color: #0a69a0;
-            padding-left: 100px;
+            position: fixed;
             font-size: 0.8em;
-            text-decoration: none;
+            color: green;
+            top: 10px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
         }
 
     .LoginButtons
     {
         position: fixed;
-        bottom: 20%;
-
+        left: 50%;
+        bottom: 15%;
+        transform: translatex(-50%);
+        font-size: 1.2em;
     }
-        .LoginButtons ul
-        {
-            position: relative;
-            display: flex;
-        }
-        .LoginButtons ul li
-        {
-            list-style: none;
-        }
-        .LoginButtons ul li a
-        {
-            font-size: 1.2em;
-            display: inline-block;
-            font-weight: 700;
-            margin-left: 62px;
-            text-decoration: none;
-        }
+
 
     #Butt_Login
     {
         position: fixed;
         color: white;
         background-color: #0a69a0;
-        text-decoration: none;
+        font-size: 1.2em;
         border-radius: 10px;
         padding: 7px 15px;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     #Butt_Login:hover
     {
