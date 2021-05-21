@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -18,7 +22,18 @@
                 <a href="landing.php"> <img src="../Images/The Proton Project Logo.png" class="Logo"> </a>
                 <ul>
                     <li><a href="about_us.html" class="BenjaminButton"> About </a></li>
-                    <li><a href="#" id="LoginID" class="BenjaminButton"> Account </a></li>
+                    <?php
+                        if (isset($_SESSION["userName"]))
+                        {
+                            echo "<li><a href='profile.php' id='LoginID' class='BenjaminButton'> Profile Page </a></li>";
+                            echo "<li><a href='includes/logout.inc.php' id='LoginID' class='BenjaminButton'> Log Out </a></li>";
+                        }
+                        else
+                        {
+                            echo "<li><a href='login.php' id='LoginID' class='BenjaminButton'> Login </a></li>";
+                            echo "<li><a href='new_user.php' id='LoginID' class='BenjaminButton'> Sign Up </a></li>";
+                        }
+                    ?>
                 </ul>
             </nav>
 

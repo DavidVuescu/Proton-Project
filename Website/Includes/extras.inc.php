@@ -80,3 +80,42 @@ function addUser($linkDB, $name, $mail, $pass)
     header("location: ../new_user.php?error=none");
     exit();
 }
+
+
+
+function emptyLogin($name, $pass)
+{
+    if (empty($name)) return true;
+    if (empty($pass)) return true;
+
+    return false;
+}
+
+
+function loginUser($linkDB, $username, $pass)
+{
+    $UIDexists = ExistingUid($linkDB, $username, $username);
+
+    if ($UIDexists === false)
+    {
+        header("location: ../login.php?error=invalidlogin");
+        exit();
+    }
+
+    $cryptPass = $UIDexists ["usersPASS"];
+    $checkPassword = password_verify($pass, $cryptPass);
+
+    if($checkPassword === false)
+    {
+        header("location: ../login.php?error=invalidlogin");
+        exit();
+    }
+    else if ($checkPassword === true)
+    {
+        session_start();
+        $_SESSION["userID"] = $UIDexists ["usersID"];
+        $_SESSION["userName"] = $UIDexists ["usersNAME"];
+            header("location: ../landing.php");
+            exit();
+    }
+}

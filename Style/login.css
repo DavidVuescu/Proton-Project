@@ -69,6 +69,16 @@ body
             font-size: 0.8em;
             text-decoration: none;
         }
+        h4
+        {
+            position: fixed;
+            font-size: 0.8em;
+            color: red;
+            top: 30px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
 
     .LoginButtons
     {
@@ -85,6 +95,14 @@ body
             list-style: none;
         }
         .LoginButtons ul li a
+        {
+            font-size: 1.2em;
+            display: inline-block;
+            font-weight: 700;
+            margin-left: 62px;
+            text-decoration: none;
+        }
+        .LoginButtons ul li button
         {
             font-size: 1.2em;
             display: inline-block;
