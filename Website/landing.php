@@ -6,10 +6,15 @@
 <link rel="stylesheet" href="../Style/landing_page.css">
 <div class="MainText">
     <?php
-        if (isset($_SESSION["userName"]))
+        if (isset($_SESSION["ADMIN"]))
+        {
+            echo "<h1 class='ScreenCenterText'>Welcome, Mr/Mrs Admin</h1>";
+            echo "<a href='sudo.php' class='LoginButton'> ENTER </a>";
+        }
+        else if (isset($_SESSION["userName"]))
         {
             echo "<h1 class='ScreenCenterText'>Welcome, " . $_SESSION["userName"] . "</h1>";
-            echo "<a href='site.php' class='LoginButton'> ENTER </a>";
+            echo "<a href='#' class='LoginButton'> ENTER </a>";
         }
         else
         {
@@ -24,3 +29,4 @@
 <?php
     include_once '../Website/PHP/footer.php'
 ?>
+ 

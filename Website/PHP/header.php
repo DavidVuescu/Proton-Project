@@ -27,7 +27,6 @@
                     <?php
                         if (isset($_SESSION["userName"]))
                         {
-                            echo "<li><a href='profile.php' id='LoginID' class='BenjaminButton'> Profile Page </a></li>";
                             echo "<li><a href='includes/logout.inc.php' id='LoginID' class='BenjaminButton'> Log Out </a></li>";
                         }
                         else

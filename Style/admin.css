@@ -1,0 +1,165 @@
+body
+{
+    min-height: 100%;
+    background-color: black;
+    background-image: url(../Images/Athmosphere.jpg);
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.AdminBody
+{
+    background-color: white;
+    width: calc(2 * 60vh);    max-width: 1000px;
+    height: calc(2 * 38vh);   min-height: 450px;  max-height: 500px;
+    position: fixed;
+    top: 25%;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+    .HeaderText
+    {
+        color: white;
+        position: fixed;
+        top: 55px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 800;
+        font-size: 2.8em;
+        user-select: none;
+    }
+    .content 
+    {
+        position: fixed;
+        display: flex;
+        width: 100vw;
+        height: 90vh;
+        top: 10vh;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        overflow: scroll;
+        scrollbar-color: transparent transparent;
+    }
+    .table 
+    {
+        position: relative;
+        display: table;
+        width: 70%;
+        height: 9.259259259259259259259259259259vh;
+        min-height: 60px;
+        text-align: center;
+        box-shadow: 4vh 4vh 13vh 7vh rgba(0, 0, 0, 0.5);
+        font-family: 'Poppins';
+        border: 0.1vh solid black;
+        overflow: hidden;
+        max-height: 30px;
+
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    td
+    {
+        border-right: 1px solid black;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    
+        h4
+        {
+            position: relative;
+            font-size: 0.8em;
+            color: red;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        h2
+        {
+            position: relative;
+            font-size: 0.8em;
+            color: green;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+    .Commands
+    {
+        position: relative;
+        top: 80%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+    }
+        .InputBox
+        {
+            position: absolute;
+            border-radius: 5px;
+            padding: 10px 10px;
+            margin-bottom: 12px;
+            border: 1px solid rgba(0, 0, 0, 0.178);
+            text-align: center;
+            transform: translate(-50%,-50%);
+            left: 50%;
+        }
+        .InputBox:hover
+        {
+            border: 1px solid #0a69a077;
+        }
+
+        .Butt_Delete
+        {
+            position: absolute;
+            color: white;
+            background-color: #0a69a0;
+            text-decoration: none;
+            border-radius: 10px;
+            padding: 7px 15px;
+            transform: translateX(-50%);
+            left: 50%;
+            top: 40px;
+        }
+        .Butt_Delete:hover
+        {
+            background-color: #09537e;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.377);
+        }
+
+    
+@media (max-width: 600px)
+{
+    .LoginBody
+    {
+        max-width: 330px;
+    }
+    .InputBox
+    {
+        padding: 10px 0px;
+    }
+    .Forget
+    {
+        padding-left: 75px;
+    }
+    #remember
+    {
+        margin-left: 4px;
+    }
+    .Commands ul li a
+    {
+        margin-right: 22px;
+        margin-left: 20px;
+        text-align: center;
+    }
+    .Commands ul li button
+    {
+        margin-left: 0px;
+    }
+}
