@@ -67,13 +67,14 @@ header nav ul li a
     text-decoration: none;
 }
 
+
 @media (max-width: 991px)
 {
     .BenjaminButton
     {
     padding: 10px 20px;
     border-radius: 10px;
-    color: black;
+    color: #333;
     }
     .BenjaminButton:hover
     {
@@ -83,8 +84,8 @@ header nav ul li a
     {
         position: relative;
         width: 10vw;
-        max-width: 80px;
-        transform: translateX(calc(4 * 1vw));
+        max-width: 70px;
+        transform: translateX(calc(3 * 1vw));
     }
     #LoginID { background-color: white;}
     #LoginID:hover { background-color: rgba(0,0,0,0.2);}
@@ -95,6 +96,12 @@ header nav ul li a
     header nav ul li 
     {
         margin-top: 15px;
+    }
+    header nav ul li a
+    {
+        font-size: 1.5em;
+        font-weight: 400;
+        margin: 5px 0px;
     }
     .toggle
     {

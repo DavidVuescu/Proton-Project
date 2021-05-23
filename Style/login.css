@@ -3,6 +3,7 @@ body
     background-color: black;
     background-image: url(../Images/Earth-Surface.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .LoginBody
@@ -143,3 +144,34 @@ body
         background-color: #09537e;
         box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.377);
     }
+
+    
+@media (max-width: 600px)
+{
+    .LoginBody
+    {
+        max-width: 330px;
+    }
+    .InputBox
+    {
+        padding: 10px 0px;
+    }
+    .Forget
+    {
+        padding-left: 75px;
+    }
+    #remember
+    {
+        margin-left: 4px;
+    }
+    .LoginButtons ul li a
+    {
+        margin-right: 22px;
+        margin-left: 20px;
+        text-align: center;
+    }
+    .LoginButtons ul li button
+    {
+        margin-left: 0px;
+    }
+}

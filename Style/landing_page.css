@@ -24,10 +24,11 @@ body
 
     user-select: none;
 
-    padding-left: 10vh;
+    margin-bottom: 25px;
+    /* padding-left: 10vh;
     padding-right: 10vh;
     padding-bottom: 2vh;
-    padding-top: 2vh;
+    padding-top: 2vh; */
 }
 
 .LoginButton
@@ -59,4 +60,24 @@ body
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
+    width: 50vw;
+}
+
+@media (max-width: 991px)
+{
+    .ScreenCenterText
+    {
+        font-size: 1.5em;
+        top: 50%;
+        left: 50%;
+    }
+    .LoginButton
+    {
+        font-size: 1em;
+    }
+    .MainText a 
+    {
+        top: 100%;
+        transform: translate(-50%, 200%);
+    }
 }
