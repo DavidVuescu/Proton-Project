@@ -28,6 +28,11 @@ header nav .Logo
 {
     position: relative;
     max-width: 180px;
+    width: 10vw;
+    padding: 10px;
+    transform: translateX(calc(8 * 1vw));
+    min-width: 80px;
+    max-width: 100px;
 }
 .BenjaminButton
 {
@@ -60,4 +65,72 @@ header nav ul li a
     font-weight: 700;
     margin-left: 50px;
     text-decoration: none;
+}
+
+@media (max-width: 991px)
+{
+    .BenjaminButton
+    {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: black;
+    }
+    .BenjaminButton:hover
+    {
+    background-color: rgba(0,0,0,0.2);
+    }
+    header nav .Logo
+    {
+        position: relative;
+        width: 10vw;
+        max-width: 80px;
+        transform: translateX(calc(4 * 1vw));
+    }
+    #LoginID { background-color: white;}
+    #LoginID:hover { background-color: rgba(0,0,0,0.2);}
+    header nav ul
+    {
+        display: none;
+    }
+    header nav ul li 
+    {
+        margin-top: 15px;
+    }
+    .toggle
+    {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url(../Images/menu.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 69;
+    }
+    .toggle.active
+    {
+        
+        /* position: fixed;
+        right: 20px; */
+        background: url(../Images/close.png);
+        filter: invert(1);
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    header nav ul.navigation.active
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        z-index: 10;
+    }
 }

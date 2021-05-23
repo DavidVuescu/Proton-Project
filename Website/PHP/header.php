@@ -9,6 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="../Style/header.css">
+        <script src="../JS/dropdown.js"></script>
 
         <title>The Proton Project</title>
     </head>
@@ -19,8 +20,9 @@
         <header>
 
             <nav>
-                <a href="landing.php"> <img src="../Images/The Proton Project Logo.png" class="Logo"> </a>
-                <ul>
+                <a href="landing.php"> <img src="../Images/The Proton Project Simple Logo.png" class="Logo"> </a>
+                <div class="toggle" onclick="ToggleMenu()"></div>
+                <ul class="navigation">
                     <li><a href="about_us.html" class="BenjaminButton"> About </a></li>
                     <?php
                         if (isset($_SESSION["userName"]))
