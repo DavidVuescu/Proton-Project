@@ -18,7 +18,7 @@
 
         <input type="checkbox" ID="remember" name="remember">
         <label for="remember" class="Remember">Remember me</label>
-        <a href="#" class="Forget">Forgot password?</a>
+        <a href="password-reset.php" class="Forget">Forgot password?</a>
 
     
     </div>
@@ -37,6 +37,13 @@
             else if ($_GET["error"] == "stmtfailed")
             {
                 echo "<h4>Uh-oh, something went wrong, try again</h4>";
+            }
+        }
+        if (isset($_GET["password"])) 
+        {
+            if ($_GET["password"] == "new")
+            {
+                echo "<h2>Password successfully changed!</h2>";
             }
         }
     ?>
