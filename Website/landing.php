@@ -18,7 +18,7 @@
         }
     ?>
 </div>
-<img src="../Videos/Earth.gif" class="MainGif">
+<img src="../Images/Earth.gif" class="MainGif">
 
 <!-- </div> -->
 <?php
